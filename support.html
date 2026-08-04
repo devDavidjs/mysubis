@@ -1,101 +1,108 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!doctype html>
+<html lang="fr" data-lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Support</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      line-height: 1.6;
-      color: #222;
-    }
-
-    h1, h2 {
-      color: #111;
-    }
-
-    .lang {
-      margin-bottom: 50px;
-      padding-bottom: 30px;
-      border-bottom: 1px solid #ddd;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support &amp; aide — MySubis</title>
+  <meta name="description" content="Besoin d'aide avec MySubis ? Consultez la FAQ (abonnement, achats, suppression de compte) et contactez-nous." />
+  <meta name="theme-color" content="#0b1310" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mysubis.app/support.html" />
+  <meta property="og:title" content="Support & aide — MySubis" />
+  <meta property="og:url" content="https://mysubis.app/support.html" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2312c48a'/%3E%3Cpath d='M28 66V40l14 12 14-16 16 14v16z' fill='%2304140d'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Comment annuler mon abonnement Premium ?", "acceptedAnswer": { "@type": "Answer", "text": "Dans l'app : Réglages → MySubis Premium → Gérer mon abonnement. La gestion passe par votre compte App Store." } },
+      { "@type": "Question", "name": "Comment supprimer mon compte ?", "acceptedAnswer": { "@type": "Answer", "text": "Dans l'app : Réglages → Supprimer mon compte. La suppression est définitive." } },
+      { "@type": "Question", "name": "Comment restaurer mes achats ?", "acceptedAnswer": { "@type": "Answer", "text": "Ouvrez le paywall MySubis Premium et appuyez sur « Restaurer mes achats »." } }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="logo" viewBox="0 0 100 100"><rect width="100" height="100" rx="24" fill="#12c48a" /><path d="M28 66V40l14 12 14-16 16 14v16z" fill="#04140d" /></symbol>
+    <symbol id="moon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.4 5.4 0 0 1-7.54-7.54c-.44-.06-.9-.1-1.36-.1z"/></symbol>
+    <symbol id="sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></g></symbol>
+  </svg>
 
-  <div class="lang">
-    <h1>Support — MySubis</h1>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="index.html"><svg class="brand__mark" aria-hidden="true"><use href="#logo" /></svg> MySubis</a>
+      <nav class="nav__links" aria-label="Navigation">
+        <a href="index.html#features"><span class="lang-fr">Fonctionnalités</span><span class="lang-en">Features</span></a>
+        <a href="privacy.html"><span class="lang-fr">Confidentialité</span><span class="lang-en">Privacy</span></a>
+      </nav>
+      <div class="nav__tools">
+        <button type="button" class="toggle" data-lang-toggle aria-label="Change language">EN</button>
+        <button type="button" class="toggle" data-theme-toggle aria-label="Toggle theme">
+          <svg class="moon" aria-hidden="true"><use href="#moon" /></svg>
+          <svg class="sun" aria-hidden="true"><use href="#sun" /></svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-    <h2>Français</h2>
+  <main class="legal">
+    <div class="container legal__wrap">
+      <a class="back" href="index.html">← <span class="lang-fr">Retour à l'accueil</span><span class="lang-en">Back to home</span></a>
 
-    <p>
-      Merci d’utiliser MySubis pour suivre vos abonnements.
-    </p>
+      <h1><span class="lang-fr">Support &amp; aide</span><span class="lang-en">Support &amp; help</span></h1>
+      <p class="updated"><span class="lang-fr">Une question, un souci ? Nous sommes là pour vous aider.</span><span class="lang-en">A question or an issue? We're here to help.</span></p>
 
-    <h3>Problèmes de connexion</h3>
-    <p>
-      Si vous n’arrivez pas à vous connecter avec Google ou Apple,
-      vérifiez que vous utilisez le même compte que celui utilisé lors
-      de votre inscription. En cas de doute, contactez-nous à l’adresse
-      ci-dessous, en précisant l’adresse e-mail associée à votre compte.
-    </p>
+      <div class="box">
+        📧 <span class="lang-fr">Contact :</span><span class="lang-en">Contact:</span> <a href="mailto:contact@mysubis.app">contact@mysubis.app</a><br />
+        <span class="lang-fr">Nous répondons généralement sous 48 h.</span><span class="lang-en">We usually reply within 48 hours.</span>
+      </div>
 
-    <h3>Suppression de compte</h3>
-    <p>
-      Pour supprimer votre compte et toutes les données associées,
-      envoyez-nous une demande à l’adresse ci-dessous depuis l’adresse
-      e-mail liée à votre compte. La suppression sera effectuée sous
-      quelques jours.
-    </p>
+      <h2><span class="lang-fr">Questions fréquentes</span><span class="lang-en">Frequently asked questions</span></h2>
+      <div class="faq">
+        <details open>
+          <summary><span class="lang-fr">Comment ajouter un abonnement ?</span><span class="lang-en">How do I add a subscription?</span></summary>
+          <p><span class="lang-fr">Depuis l'accueil, appuyez sur « + », renseignez le nom, le montant, la récurrence (tous les X jours / semaines / mois / ans) et la prochaine échéance.</span><span class="lang-en">From the home screen, tap "+", then enter the name, amount, recurrence (every X days / weeks / months / years) and next due date.</span></p>
+        </details>
+        <details>
+          <summary><span class="lang-fr">Comment fonctionnent les rappels ?</span><span class="lang-en">How do reminders work?</span></summary>
+          <p><span class="lang-fr">MySubis programme une notification locale avant chaque prélèvement. Réglez le délai et l'heure dans Réglages → Notifications. Aucune donnée n'est envoyée à un serveur.</span><span class="lang-en">MySubis schedules a local notification before each charge. Set the timing in Settings → Notifications. No data is sent to a server for this.</span></p>
+        </details>
+        <details>
+          <summary><span class="lang-fr">Comment annuler mon abonnement Premium ?</span><span class="lang-en">How do I cancel Premium?</span></summary>
+          <p><span class="lang-fr">Réglages → MySubis Premium → <strong>Gérer mon abonnement</strong>. La gestion et l'annulation se font via votre compte App Store. Une app ne peut pas annuler à votre place (règle Apple).</span><span class="lang-en">Settings → MySubis Premium → <strong>Manage subscription</strong>. Management and cancellation happen through your App Store account. An app can't cancel on your behalf (Apple rule).</span></p>
+        </details>
+        <details>
+          <summary><span class="lang-fr">Comment restaurer mes achats ?</span><span class="lang-en">How do I restore purchases?</span></summary>
+          <p><span class="lang-fr">Ouvrez l'écran MySubis Premium et appuyez sur <strong>« Restaurer mes achats »</strong>.</span><span class="lang-en">Open the MySubis Premium screen and tap <strong>"Restore purchases"</strong>.</span></p>
+        </details>
+        <details>
+          <summary><span class="lang-fr">Comment supprimer mon compte ?</span><span class="lang-en">How do I delete my account?</span></summary>
+          <p><span class="lang-fr">Réglages → <strong>Supprimer mon compte</strong>. L'opération est définitive et efface toutes vos données.</span><span class="lang-en">Settings → <strong>Delete my account</strong>. This is permanent and erases all your data.</span></p>
+        </details>
+        <details>
+          <summary><span class="lang-fr">J'ai trouvé un bug, comment le signaler ?</span><span class="lang-en">I found a bug, how do I report it?</span></summary>
+          <p><span class="lang-fr">Réglages → <strong>Signaler un bug</strong>. Décrivez le problème, nous le corrigerons au plus vite. Vous pouvez aussi nous écrire par e-mail.</span><span class="lang-en">Settings → <strong>Report a bug</strong>. Describe the issue and we'll fix it as soon as possible. You can also email us.</span></p>
+        </details>
+      </div>
+    </div>
+  </main>
 
-    <h3>Nous contacter</h3>
-    <p>
-      Pour toute autre question ou problème rencontré dans
-      l’application, contactez-nous à l’adresse suivante :
-    </p>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="brand" href="index.html"><svg class="brand__mark" aria-hidden="true"><use href="#logo" /></svg> MySubis</a>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="index.html"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a>
+        <a href="privacy.html"><span class="lang-fr">Confidentialité</span><span class="lang-en">Privacy</span></a>
+        <a href="support.html">Support</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener"><span class="lang-fr">Conditions</span><span class="lang-en">Terms</span></a>
+      </nav>
+      <p class="footer__copy">© 2026 MySubis.</p>
+    </div>
+  </footer>
 
-    <p>
-      contact@davidcalonne.fr
-    </p>
-  </div>
-
-  <div class="lang">
-    <h2>English</h2>
-
-    <p>
-      Thank you for using MySubis to track your subscriptions.
-    </p>
-
-    <h3>Sign-in issues</h3>
-    <p>
-      If you can’t sign in with Google or Apple, make sure you’re using
-      the same account you signed up with. If the issue persists,
-      contact us below with the email address associated with your
-      account.
-    </p>
-
-    <h3>Account deletion</h3>
-    <p>
-      To delete your account and all associated data, send us a request
-      at the address below from the email linked to your account.
-      Deletion will be processed within a few days.
-    </p>
-
-    <h3>Contact us</h3>
-    <p>
-      For any other question or issue you encounter in the app,
-      please contact us at:
-    </p>
-
-    <p>
-      contact@davidcalonne.fr
-    </p>
-  </div>
-
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="fr" data-lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MySubis — Gérez vos abonnements et votre budget</title>
+  <meta name="description" content="MySubis suit tous vos abonnements récurrents, vous rappelle chaque prélèvement et calcule votre solde net. Statistiques, prévisions et budget 50/30/20. Gratuit, sur iPhone." />
+  <meta name="keywords" content="abonnements, gestion abonnements, budget, suivi dépenses, rappel prélèvement, finances personnelles, application iPhone" />
+  <meta name="theme-color" content="#0b1310" />
+  <link rel="canonical" href="https://mysubis.app/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MySubis" />
+  <meta property="og:title" content="MySubis — Vos abonnements, sous contrôle" />
+  <meta property="og:description" content="Suivez tous vos abonnements, recevez un rappel avant chaque paiement et maîtrisez votre budget." />
+  <meta property="og:url" content="https://mysubis.app/" />
+  <meta property="og:image" content="https://mysubis.app/img/screenshot_fr.PNG" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MySubis — Vos abonnements, sous contrôle" />
+  <meta name="twitter:description" content="Suivez tous vos abonnements et maîtrisez votre budget." />
+  <meta name="twitter:image" content="https://mysubis.app/img/screenshot_fr.PNG" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2312c48a'/%3E%3Cpath d='M28 66V40l14 12 14-16 16 14v16z' fill='%2304140d'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "MySubis",
+    "operatingSystem": "iOS",
+    "applicationCategory": "FinanceApplication",
+    "description": "Gérez vos abonnements récurrents, recevez des rappels avant chaque prélèvement et suivez votre budget.",
+    "url": "https://mysubis.app/",
+    "installUrl": "https://apps.apple.com/fr/app/mysubis-suivi-dabonnements/id6780065688",
+    "downloadUrl": "https://apps.apple.com/fr/app/mysubis-suivi-dabonnements/id6780065688",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+  }
+  </script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="logo" viewBox="0 0 100 100"><rect width="100" height="100" rx="24" fill="#12c48a" /><path d="M28 66V40l14 12 14-16 16 14v16z" fill="#04140d" /></symbol>
+    <symbol id="moon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.4 5.4 0 0 1-7.54-7.54c-.44-.06-.9-.1-1.36-.1z"/></symbol>
+    <symbol id="sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></g></symbol>
+    <symbol id="apple" viewBox="0 0 24 24"><path fill="currentColor" d="M17.56 12.77c-.03-2.62 2.14-3.88 2.24-3.94-1.22-1.79-3.12-2.03-3.8-2.06-1.62-.16-3.16.95-3.98.95-.82 0-2.09-.93-3.44-.9-1.77.03-3.4 1.03-4.31 2.61-1.84 3.19-.47 7.91 1.32 10.5.87 1.27 1.91 2.69 3.27 2.64 1.31-.05 1.81-.85 3.4-.85 1.58 0 2.03.85 3.42.82 1.41-.02 2.31-1.29 3.17-2.57.99-1.47 1.4-2.9 1.42-2.97-.03-.01-2.73-1.05-2.76-4.16zM14.98 5.13c.72-.88 1.21-2.1 1.08-3.31-1.04.04-2.3.69-3.05 1.56-.67.78-1.25 2.02-1.09 3.21 1.16.09 2.34-.59 3.06-1.46z"/></symbol>
+  </svg>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="index.html" aria-label="MySubis"><svg class="brand__mark" aria-hidden="true"><use href="#logo" /></svg> MySubis</a>
+      <nav class="nav__links" aria-label="Navigation">
+        <a href="#features"><span class="lang-fr">Fonctionnalités</span><span class="lang-en">Features</span></a>
+        <a href="#compare"><span class="lang-fr">Offres</span><span class="lang-en">Plans</span></a>
+        <a href="#faq">FAQ</a>
+        <a href="support.html">Support</a>
+      </nav>
+      <div class="nav__tools">
+        <button type="button" class="toggle" data-lang-toggle aria-label="Changer de langue / Change language">EN</button>
+        <button type="button" class="toggle" data-theme-toggle aria-label="Changer de thème / Toggle theme">
+          <svg class="moon" aria-hidden="true"><use href="#moon" /></svg>
+          <svg class="sun" aria-hidden="true"><use href="#sun" /></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <span class="badge">
+            <span class="lang-fr">💸 Fini les mauvaises surprises de prélèvement</span>
+            <span class="lang-en">💸 No more surprise charges</span>
+          </span>
+          <h1>
+            <span class="lang-fr">Vos abonnements,<br /><span class="grad">sous contrôle.</span></span>
+            <span class="lang-en">Your subscriptions,<br /><span class="grad">under control.</span></span>
+          </h1>
+          <p class="lead">
+            <span class="lang-fr">MySubis réunit tous vos abonnements, vous prévient avant chaque paiement et calcule votre solde net en temps réel.</span>
+            <span class="lang-en">MySubis brings all your subscriptions together, reminds you before each payment and shows your real net balance.</span>
+          </p>
+          <div class="trust">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span><span class="lang-fr">Pensé pour iPhone • Conçu avec soin</span><span class="lang-en">Built for iPhone • Crafted with care</span></span>
+          </div>
+          <div class="hero__actions">
+            <a class="appstore" href="https://apps.apple.com/fr/app/mysubis-suivi-dabonnements/id6780065688" target="_blank" rel="noopener" aria-label="Télécharger MySubis sur l'App Store">
+              <svg aria-hidden="true"><use href="#apple" /></svg>
+              <span class="as-txt">
+                <small><span class="lang-fr">Télécharger dans l'</span><span class="lang-en">Download on the</span></small>
+                <b>App Store</b>
+              </span>
+            </a>
+            <a class="btn btn--ghost" href="#features"><span class="lang-fr">Découvrir</span><span class="lang-en">Explore</span></a>
+          </div>
+          <p class="hero__note"><span class="lang-fr">Gratuit • iOS • Sans publicité</span><span class="lang-en">Free • iOS • No ads</span></p>
+        </div>
+
+        <div class="phone">
+          <div class="phone__screen">
+            <img class="lang-fr" src="img/screenshot_fr.PNG" width="1179" height="2556" alt="Écran d'accueil de MySubis en français : solde net et prochains paiements" loading="eager" />
+            <img class="lang-en" src="img/screenshot_en.PNG" width="1179" height="2556" alt="MySubis home screen in English: net balance and upcoming payments" loading="eager" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="lang-fr">Fonctionnalités</span><span class="lang-en">Features</span></span>
+          <h2><span class="lang-fr">Tout pour maîtriser vos dépenses récurrentes</span><span class="lang-en">Everything to master your recurring spending</span></h2>
+          <p><span class="lang-fr">Un suivi clair, des rappels intelligents et des statistiques qui parlent.</span><span class="lang-en">Clear tracking, smart reminders and meaningful stats.</span></p>
+        </div>
+        <div class="features reveal">
+          <article class="feature">
+            <div class="feature__icon">🔔</div>
+            <h3><span class="lang-fr">Rappels avant prélèvement</span><span class="lang-en">Reminders before charges</span></h3>
+            <p><span class="lang-fr">Une notification avant chaque paiement. Vous n'êtes plus jamais pris au dépourvu.</span><span class="lang-en">A notification before every payment. Never get caught off guard again.</span></p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">📅</div>
+            <h3><span class="lang-fr">Calendrier des paiements</span><span class="lang-en">Payment calendar</span></h3>
+            <p><span class="lang-fr">Visualisez d'un coup d'œil quand l'argent quitte votre compte.</span><span class="lang-en">See at a glance when money leaves your account.</span></p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">⚖️</div>
+            <h3><span class="lang-fr">Solde net réel</span><span class="lang-en">Real net balance</span></h3>
+            <p><span class="lang-fr">Vos revenus moins vos dépenses récurrentes, calculés automatiquement.</span><span class="lang-en">Your income minus recurring expenses, calculated automatically.</span></p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">🔁</div>
+            <h3><span class="lang-fr">Récurrences flexibles</span><span class="lang-en">Flexible recurrence</span></h3>
+            <p><span class="lang-fr">Tous les jours, semaines, mois ou années — et « tous les X » pour les cas particuliers.</span><span class="lang-en">Every day, week, month or year — plus "every X" for edge cases.</span></p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">📊</div>
+            <h3><span class="lang-fr">Statistiques avancées</span><span class="lang-en">Advanced statistics</span></h3>
+            <p><span class="lang-fr">Répartition par catégorie, évolution sur 12 mois, prévisions et budget 50/30/20.</span><span class="lang-en">Category breakdown, 12-month trend, forecasts and 50/30/20 budget.</span></p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">🌍</div>
+            <h3><span class="lang-fr">Multi-devises &amp; langues</span><span class="lang-en">Multi-currency &amp; languages</span></h3>
+            <p><span class="lang-fr">EUR, USD, GBP, CHF, CAD — en français, anglais, espagnol et italien.</span><span class="lang-en">EUR, USD, GBP, CHF, CAD — in French, English, Spanish and Italian.</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMENT ÇA MARCHE -->
+    <section id="how">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="lang-fr">En 3 étapes</span><span class="lang-en">In 3 steps</span></span>
+          <h2><span class="lang-fr">Simple, dès la première minute</span><span class="lang-en">Simple, from minute one</span></h2>
+        </div>
+        <div class="steps reveal">
+          <div class="step">
+            <span class="step__line" aria-hidden="true"></span>
+            <h3><span class="lang-fr">Ajoutez vos abonnements</span><span class="lang-en">Add your subscriptions</span></h3>
+            <p><span class="lang-fr">Nom, montant, récurrence et prochaine échéance. Le logo se trouve tout seul.</span><span class="lang-en">Name, amount, recurrence and next due date. The logo is found automatically.</span></p>
+          </div>
+          <div class="step">
+            <span class="step__line" aria-hidden="true"></span>
+            <h3><span class="lang-fr">Recevez vos rappels</span><span class="lang-en">Get your reminders</span></h3>
+            <p><span class="lang-fr">Une notification avant chaque prélèvement, réglable selon vos préférences.</span><span class="lang-en">A notification before each charge, tuned to your preferences.</span></p>
+          </div>
+          <div class="step">
+            <h3><span class="lang-fr">Pilotez votre budget</span><span class="lang-en">Master your budget</span></h3>
+            <p><span class="lang-fr">Solde net, statistiques et prévisions vous montrent où part votre argent.</span><span class="lang-en">Net balance, stats and forecasts show where your money goes.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS BAND -->
+    <section class="band">
+      <div class="container">
+        <div class="stats reveal">
+          <div class="stat"><b>100 %</b><span><span class="lang-fr">Vos données, privées</span><span class="lang-en">Your data, private</span></span></div>
+          <div class="stat"><b>0 €</b><span><span class="lang-fr">Pour commencer</span><span class="lang-en">To get started</span></span></div>
+          <div class="stat"><b>4</b><span><span class="lang-fr">Langues</span><span class="lang-en">Languages</span></span></div>
+          <div class="stat"><b>∞</b><span><span class="lang-fr">Abonnements en Premium</span><span class="lang-en">Subscriptions on Premium</span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARATIF Gratuit / Premium -->
+    <section id="compare">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="lang-fr">Offres</span><span class="lang-en">Plans</span></span>
+          <h2><span class="lang-fr">Gratuit ou Premium ?</span><span class="lang-en">Free or Premium?</span></h2>
+          <p><span class="lang-fr">Commencez gratuitement, passez à Premium quand vous voulez plus.</span><span class="lang-en">Start free, go Premium whenever you want more.</span></p>
+        </div>
+        <div class="compare reveal">
+          <table>
+            <thead>
+              <tr>
+                <th><span class="lang-fr">Fonctionnalité</span><span class="lang-en">Feature</span></th>
+                <th>Gratuit</th>
+                <th class="col-premium">Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="lang-fr">Abonnements suivis</span><span class="lang-en">Tracked subscriptions</span></td>
+                <td>5</td>
+                <td class="col-premium"><span class="lang-fr">Illimité</span><span class="lang-en">Unlimited</span></td>
+              </tr>
+              <tr>
+                <td><span class="lang-fr">Revenus &amp; catégories</span><span class="lang-en">Incomes &amp; categories</span></td>
+                <td><span class="lang-fr">Limités</span><span class="lang-en">Limited</span></td>
+                <td class="col-premium"><span class="lang-fr">Illimités</span><span class="lang-en">Unlimited</span></td>
+              </tr>
+              <tr>
+                <td><span class="lang-fr">Rappels avant paiement</span><span class="lang-en">Payment reminders</span></td>
+                <td class="yes">✓</td>
+                <td class="col-premium yes">✓</td>
+              </tr>
+              <tr>
+                <td><span class="lang-fr">Calendrier &amp; solde net</span><span class="lang-en">Calendar &amp; net balance</span></td>
+                <td class="yes">✓</td>
+                <td class="col-premium yes">✓</td>
+              </tr>
+              <tr>
+                <td><span class="lang-fr">Statistiques avancées (catégories, 12 mois, prévisions)</span><span class="lang-en">Advanced stats (categories, 12 months, forecasts)</span></td>
+                <td class="no">—</td>
+                <td class="col-premium yes">✓</td>
+              </tr>
+              <tr>
+                <td><span class="lang-fr">Budget 50/30/20 &amp; coût dans le temps</span><span class="lang-en">50/30/20 budget &amp; time cost</span></td>
+                <td class="no">—</td>
+                <td class="col-premium yes">✓</td>
+              </tr>
+              <tr>
+                <td><span class="lang-fr">Rappels personnalisés par abonnement</span><span class="lang-en">Custom reminders per subscription</span></td>
+                <td class="no">—</td>
+                <td class="col-premium yes">✓</td>
+              </tr>
+              <tr>
+                <td><span class="lang-fr">Export CSV</span><span class="lang-en">CSV export</span></td>
+                <td class="no">—</td>
+                <td class="col-premium yes">✓</td>
+              </tr>
+              <tr class="price-row">
+                <td><span class="lang-fr">Prix</span><span class="lang-en">Price</span></td>
+                <td><span class="lang-fr">Gratuit</span><span class="lang-en">Free</span></td>
+                <td class="col-premium">4,99 € <span class="lang-fr">/mois</span><span class="lang-en">/mo</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="compare-cta">
+          <a class="btn btn--primary" href="#download"><span class="lang-fr">Commencer gratuitement</span><span class="lang-en">Start for free</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2><span class="lang-fr">Questions fréquentes</span><span class="lang-en">Frequently asked</span></h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary><span class="lang-fr">MySubis est-il gratuit ?</span><span class="lang-en">Is MySubis free?</span></summary>
+            <p><span class="lang-fr">Oui. Vous suivez vos abonnements essentiels gratuitement. Le plan Premium (4,99 €/mois) débloque l'illimité, les statistiques avancées et les rappels personnalisés.</span><span class="lang-en">Yes. You can track your essential subscriptions for free. Premium (€4.99/mo) unlocks unlimited items, advanced stats and custom reminders.</span></p>
+          </details>
+          <details>
+            <summary><span class="lang-fr">Mes données bancaires sont-elles connectées ?</span><span class="lang-en">Is my bank account connected?</span></summary>
+            <p><span class="lang-fr">Non. MySubis ne se connecte à aucun compte bancaire : vous saisissez vos abonnements manuellement.</span><span class="lang-en">No. MySubis never connects to a bank account — you add your subscriptions manually.</span></p>
+          </details>
+          <details>
+            <summary><span class="lang-fr">Comment annuler mon abonnement Premium ?</span><span class="lang-en">How do I cancel Premium?</span></summary>
+            <p><span class="lang-fr">Réglages → MySubis Premium → Gérer mon abonnement. La gestion passe par votre compte App Store, à tout moment.</span><span class="lang-en">Settings → MySubis Premium → Manage subscription. It's handled through your App Store account, anytime.</span></p>
+          </details>
+          <details>
+            <summary><span class="lang-fr">Puis-je supprimer mon compte ?</span><span class="lang-en">Can I delete my account?</span></summary>
+            <p><span class="lang-fr">Oui, définitivement, depuis Réglages → Supprimer mon compte.</span><span class="lang-en">Yes, permanently, from Settings → Delete my account.</span></p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="download" class="cta">
+      <div class="container">
+        <h2><span class="lang-fr">Reprenez le contrôle de votre argent</span><span class="lang-en">Take back control of your money</span></h2>
+        <p><span class="lang-fr">Téléchargez MySubis et voyez enfin où part votre argent chaque mois.</span><span class="lang-en">Download MySubis and finally see where your money goes each month.</span></p>
+        <div class="cta-badge">
+          <a class="appstore" href="https://apps.apple.com/fr/app/mysubis-suivi-dabonnements/id6780065688" target="_blank" rel="noopener" aria-label="Télécharger MySubis sur l'App Store">
+            <svg aria-hidden="true"><use href="#apple" /></svg>
+            <span class="as-txt">
+              <small><span class="lang-fr">Télécharger dans l'</span><span class="lang-en">Download on the</span></small>
+              <b>App Store</b>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="brand" href="index.html"><svg class="brand__mark" aria-hidden="true"><use href="#logo" /></svg> MySubis</a>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="index.html"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a>
+        <a href="privacy.html"><span class="lang-fr">Confidentialité</span><span class="lang-en">Privacy</span></a>
+        <a href="support.html">Support</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener"><span class="lang-fr">Conditions</span><span class="lang-en">Terms</span></a>
+      </nav>
+      <p class="footer__copy">© 2026 MySubis. <span class="lang-fr">Tous droits réservés.</span><span class="lang-en">All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
