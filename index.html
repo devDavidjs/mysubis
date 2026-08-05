@@ -23,6 +23,9 @@
   <meta name="twitter:image" content="https://mysubis.app/img/screenshot_fr.PNG" />
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2312c48a'/%3E%3Cpath d='M28 66V40l14 12 14-16 16 14v16z' fill='%2304140d'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Inter+Tight:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <script>document.documentElement.classList.add('js');</script>
 
@@ -102,10 +105,23 @@
           <p class="hero__note"><span class="lang-fr">Gratuit • iOS • Sans publicité</span><span class="lang-en">Free • iOS • No ads</span></p>
         </div>
 
-        <div class="phone">
-          <div class="phone__screen">
-            <img class="lang-fr" src="img/screenshot_fr.PNG" width="1179" height="2556" alt="Écran d'accueil de MySubis en français : solde net et prochains paiements" loading="eager" />
-            <img class="lang-en" src="img/screenshot_en.PNG" width="1179" height="2556" alt="MySubis home screen in English: net balance and upcoming payments" loading="eager" />
+        <div class="phone-stage">
+          <div class="phone">
+            <div class="phone__screen">
+              <img class="lang-fr" src="img/screenshot_fr.PNG" width="1179" height="2556" alt="Écran d'accueil de MySubis en français : solde net et prochains paiements" loading="eager" />
+              <img class="lang-en" src="img/screenshot_en.PNG" width="1179" height="2556" alt="MySubis home screen in English: net balance and upcoming payments" loading="eager" />
+            </div>
+          </div>
+          <div class="float-card float-card--top" aria-hidden="true">
+            <span class="float-card__dot"></span>
+            <div>
+              <b><span class="lang-fr">Netflix</span><span class="lang-en">Netflix</span></b>
+              <small><span class="lang-fr">Dans 2 jours</span><span class="lang-en">In 2 days</span></small>
+            </div>
+          </div>
+          <div class="float-card float-card--bottom" aria-hidden="true">
+            <small><span class="lang-fr">Solde net</span><span class="lang-en">Net balance</span></small>
+            <b class="float-card__amount">+1 240 €</b>
           </div>
         </div>
       </div>
@@ -119,11 +135,21 @@
           <h2><span class="lang-fr">Tout pour maîtriser vos dépenses récurrentes</span><span class="lang-en">Everything to master your recurring spending</span></h2>
           <p><span class="lang-fr">Un suivi clair, des rappels intelligents et des statistiques qui parlent.</span><span class="lang-en">Clear tracking, smart reminders and meaningful stats.</span></p>
         </div>
-        <div class="features reveal">
+        <div class="bento reveal">
+          <article class="feature feature--lg">
+            <div class="feature__icon">📊</div>
+            <h3><span class="lang-fr">Statistiques avancées</span><span class="lang-en">Advanced statistics</span></h3>
+            <p><span class="lang-fr">Répartition par catégorie, évolution sur 12 mois, prévisions et budget 50/30/20.</span><span class="lang-en">Category breakdown, 12-month trend, forecasts and 50/30/20 budget.</span></p>
+            <div class="mini-chart" aria-hidden="true">
+              <span style="--h:38%"></span><span style="--h:62%"></span><span style="--h:48%"></span>
+              <span style="--h:80%"></span><span style="--h:55%"></span><span style="--h:70%"></span>
+              <span style="--h:44%"></span><span style="--h:92%"></span>
+            </div>
+          </article>
           <article class="feature">
             <div class="feature__icon">🔔</div>
             <h3><span class="lang-fr">Rappels avant prélèvement</span><span class="lang-en">Reminders before charges</span></h3>
-            <p><span class="lang-fr">Une notification avant chaque paiement. Vous n'êtes plus jamais pris au dépourvu.</span><span class="lang-en">A notification before every payment. Never get caught off guard again.</span></p>
+            <p><span class="lang-fr">Une notification avant chaque paiement. Jamais pris au dépourvu.</span><span class="lang-en">A notification before every payment. Never caught off guard.</span></p>
           </article>
           <article class="feature">
             <div class="feature__icon">📅</div>
@@ -133,22 +159,22 @@
           <article class="feature">
             <div class="feature__icon">⚖️</div>
             <h3><span class="lang-fr">Solde net réel</span><span class="lang-en">Real net balance</span></h3>
-            <p><span class="lang-fr">Vos revenus moins vos dépenses récurrentes, calculés automatiquement.</span><span class="lang-en">Your income minus recurring expenses, calculated automatically.</span></p>
+            <p><span class="lang-fr">Revenus moins dépenses récurrentes, calculés automatiquement.</span><span class="lang-en">Income minus recurring expenses, calculated automatically.</span></p>
           </article>
           <article class="feature">
             <div class="feature__icon">🔁</div>
             <h3><span class="lang-fr">Récurrences flexibles</span><span class="lang-en">Flexible recurrence</span></h3>
-            <p><span class="lang-fr">Tous les jours, semaines, mois ou années — et « tous les X » pour les cas particuliers.</span><span class="lang-en">Every day, week, month or year — plus "every X" for edge cases.</span></p>
+            <p><span class="lang-fr">Jour, semaine, mois, année — et « tous les X » pour les cas particuliers.</span><span class="lang-en">Day, week, month, year — plus "every X" for edge cases.</span></p>
           </article>
-          <article class="feature">
-            <div class="feature__icon">📊</div>
-            <h3><span class="lang-fr">Statistiques avancées</span><span class="lang-en">Advanced statistics</span></h3>
-            <p><span class="lang-fr">Répartition par catégorie, évolution sur 12 mois, prévisions et budget 50/30/20.</span><span class="lang-en">Category breakdown, 12-month trend, forecasts and 50/30/20 budget.</span></p>
-          </article>
-          <article class="feature">
+          <article class="feature feature--wide">
             <div class="feature__icon">🌍</div>
-            <h3><span class="lang-fr">Multi-devises &amp; langues</span><span class="lang-en">Multi-currency &amp; languages</span></h3>
-            <p><span class="lang-fr">EUR, USD, GBP, CHF, CAD — en français, anglais, espagnol et italien.</span><span class="lang-en">EUR, USD, GBP, CHF, CAD — in French, English, Spanish and Italian.</span></p>
+            <div class="feature__text">
+              <h3><span class="lang-fr">Multi-devises &amp; langues</span><span class="lang-en">Multi-currency &amp; languages</span></h3>
+              <p><span class="lang-fr">EUR, USD, GBP, CHF, CAD — en français, anglais, espagnol et italien.</span><span class="lang-en">EUR, USD, GBP, CHF, CAD — in French, English, Spanish and Italian.</span></p>
+            </div>
+            <div class="feature__pills" aria-hidden="true">
+              <span>EUR</span><span>USD</span><span>GBP</span><span>CHF</span><span>CAD</span>
+            </div>
           </article>
         </div>
       </div>
@@ -200,66 +226,41 @@
           <h2><span class="lang-fr">Gratuit ou Premium ?</span><span class="lang-en">Free or Premium?</span></h2>
           <p><span class="lang-fr">Commencez gratuitement, passez à Premium quand vous voulez plus.</span><span class="lang-en">Start free, go Premium whenever you want more.</span></p>
         </div>
-        <div class="compare reveal">
-          <table>
-            <thead>
-              <tr>
-                <th><span class="lang-fr">Fonctionnalité</span><span class="lang-en">Feature</span></th>
-                <th>Gratuit</th>
-                <th class="col-premium">Premium</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><span class="lang-fr">Abonnements suivis</span><span class="lang-en">Tracked subscriptions</span></td>
-                <td>5</td>
-                <td class="col-premium"><span class="lang-fr">Illimité</span><span class="lang-en">Unlimited</span></td>
-              </tr>
-              <tr>
-                <td><span class="lang-fr">Revenus &amp; catégories</span><span class="lang-en">Incomes &amp; categories</span></td>
-                <td><span class="lang-fr">Limités</span><span class="lang-en">Limited</span></td>
-                <td class="col-premium"><span class="lang-fr">Illimités</span><span class="lang-en">Unlimited</span></td>
-              </tr>
-              <tr>
-                <td><span class="lang-fr">Rappels avant paiement</span><span class="lang-en">Payment reminders</span></td>
-                <td class="yes">✓</td>
-                <td class="col-premium yes">✓</td>
-              </tr>
-              <tr>
-                <td><span class="lang-fr">Calendrier &amp; solde net</span><span class="lang-en">Calendar &amp; net balance</span></td>
-                <td class="yes">✓</td>
-                <td class="col-premium yes">✓</td>
-              </tr>
-              <tr>
-                <td><span class="lang-fr">Statistiques avancées (catégories, 12 mois, prévisions)</span><span class="lang-en">Advanced stats (categories, 12 months, forecasts)</span></td>
-                <td class="no">—</td>
-                <td class="col-premium yes">✓</td>
-              </tr>
-              <tr>
-                <td><span class="lang-fr">Budget 50/30/20 &amp; coût dans le temps</span><span class="lang-en">50/30/20 budget &amp; time cost</span></td>
-                <td class="no">—</td>
-                <td class="col-premium yes">✓</td>
-              </tr>
-              <tr>
-                <td><span class="lang-fr">Rappels personnalisés par abonnement</span><span class="lang-en">Custom reminders per subscription</span></td>
-                <td class="no">—</td>
-                <td class="col-premium yes">✓</td>
-              </tr>
-              <tr>
-                <td><span class="lang-fr">Export CSV</span><span class="lang-en">CSV export</span></td>
-                <td class="no">—</td>
-                <td class="col-premium yes">✓</td>
-              </tr>
-              <tr class="price-row">
-                <td><span class="lang-fr">Prix</span><span class="lang-en">Price</span></td>
-                <td><span class="lang-fr">Gratuit</span><span class="lang-en">Free</span></td>
-                <td class="col-premium">4,99 € <span class="lang-fr">/mois</span><span class="lang-en">/mo</span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="compare-cta">
-          <a class="btn btn--primary" href="#download"><span class="lang-fr">Commencer gratuitement</span><span class="lang-en">Start for free</span></a>
+        <div class="pricing reveal">
+          <div class="price-card">
+            <div class="price-card__head">
+              <h3><span class="lang-fr">Gratuit</span><span class="lang-en">Free</span></h3>
+              <p><span class="lang-fr">Pour démarrer et garder l'essentiel sous contrôle.</span><span class="lang-en">To get started and keep the essentials under control.</span></p>
+            </div>
+            <div class="price-card__amount">0 € <span><span class="lang-fr">/mois</span><span class="lang-en">/mo</span></span></div>
+            <ul class="price-card__list">
+              <li class="yes">5 <span class="lang-fr">abonnements suivis</span><span class="lang-en">tracked subscriptions</span></li>
+              <li class="yes"><span class="lang-fr">Revenus &amp; catégories limités</span><span class="lang-en">Limited incomes &amp; categories</span></li>
+              <li class="yes"><span class="lang-fr">Rappels avant paiement</span><span class="lang-en">Payment reminders</span></li>
+              <li class="yes"><span class="lang-fr">Calendrier &amp; solde net</span><span class="lang-en">Calendar &amp; net balance</span></li>
+              <li class="no"><span class="lang-fr">Statistiques avancées</span><span class="lang-en">Advanced statistics</span></li>
+              <li class="no"><span class="lang-fr">Export CSV</span><span class="lang-en">CSV export</span></li>
+            </ul>
+            <a class="btn btn--ghost price-card__cta" href="#download"><span class="lang-fr">Commencer gratuitement</span><span class="lang-en">Start for free</span></a>
+          </div>
+
+          <div class="price-card price-card--premium">
+            <span class="price-card__badge"><span class="lang-fr">Le plus populaire</span><span class="lang-en">Most popular</span></span>
+            <div class="price-card__head">
+              <h3>Premium</h3>
+              <p><span class="lang-fr">Pour piloter votre budget dans le détail.</span><span class="lang-en">To manage your budget in full detail.</span></p>
+            </div>
+            <div class="price-card__amount">4,99 € <span><span class="lang-fr">/mois</span><span class="lang-en">/mo</span></span></div>
+            <ul class="price-card__list">
+              <li class="yes"><span class="lang-fr">Abonnements illimités</span><span class="lang-en">Unlimited subscriptions</span></li>
+              <li class="yes"><span class="lang-fr">Revenus &amp; catégories illimités</span><span class="lang-en">Unlimited incomes &amp; categories</span></li>
+              <li class="yes"><span class="lang-fr">Statistiques avancées &amp; prévisions</span><span class="lang-en">Advanced statistics &amp; forecasts</span></li>
+              <li class="yes"><span class="lang-fr">Budget 50/30/20 &amp; coût dans le temps</span><span class="lang-en">50/30/20 budget &amp; time cost</span></li>
+              <li class="yes"><span class="lang-fr">Rappels personnalisés par abonnement</span><span class="lang-en">Custom reminders per subscription</span></li>
+              <li class="yes"><span class="lang-fr">Export CSV</span><span class="lang-en">CSV export</span></li>
+            </ul>
+            <a class="btn btn--primary price-card__cta" href="#download"><span class="lang-fr">Passer à Premium</span><span class="lang-en">Go Premium</span></a>
+          </div>
         </div>
       </div>
     </section>
