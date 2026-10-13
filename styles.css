@@ -411,3 +411,24 @@ section { padding: 88px 0; }
   .whatsnew__head h2 br, .section-head h2 br { display: none; }
   .phone--sm { width: 210px; }
 }
+
+/* ---------- Pages d'authentification (/auth) ---------- */
+.auth { min-height: calc(100vh - 69px); display: grid; place-items: center; padding: 40px 16px 64px; }
+/* Masquée tant que le script n'a pas vérifié qu'elle n'est pas intégrée dans un cadre */
+html:not(.auth-ready) .auth__card { visibility: hidden; }
+.auth__card { width: 100%; max-width: 420px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 36px 28px; text-align: center; }
+.auth__logo { width: 64px; height: 64px; border-radius: 15px; margin: 0 auto 20px; display: block; }
+.auth h1 { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.03em; }
+.auth__lead { color: var(--muted); margin-top: 8px; }
+.auth__form { display: flex; flex-direction: column; gap: 8px; margin-top: 24px; text-align: left; }
+.auth__form label { font-size: 0.86rem; font-weight: 600; color: var(--muted); margin-top: 8px; }
+.auth__form input { height: 48px; border-radius: 14px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); padding: 0 14px; font: inherit; font-size: 1rem; }
+.auth__form input:focus { outline: 2px solid var(--mint); outline-offset: 1px; }
+.auth__hint { display: flex; justify-content: space-between; align-items: center; color: var(--muted); font-size: 0.82rem; }
+.auth__toggle { background: none; border: 0; color: var(--accent); font: inherit; font-weight: 600; cursor: pointer; }
+.auth__cta { width: 100%; margin-top: 18px; }
+.auth__cta:disabled { opacity: 0.6; cursor: wait; }
+.auth__status { margin-top: 20px; padding: 14px 16px; border-radius: 14px; background: var(--surface-2); color: var(--prose); font-size: 0.95rem; text-align: left; }
+.auth__status[data-tone="error"] { background: rgba(220, 38, 38, 0.1); color: var(--text); border: 1px solid rgba(220, 38, 38, 0.35); }
+.auth__status[data-tone="success"] { background: rgba(46, 230, 168, 0.12); color: var(--text); border: 1px solid rgba(46, 230, 168, 0.4); }
+[hidden] { display: none !important; }
