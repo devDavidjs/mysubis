@@ -1,15 +1,16 @@
 # Site MySubis
 
-Site vitrine statique (HTML/CSS, sans build) — pensé pour **GitHub Pages**.
+Site vitrine statique (HTML/CSS, sans build) — pensé pour **GitHub Pages** (`www.mysubis.app`). Mis à jour pour **MySubis 2.0** (oct. 2026) : DA noir & blanc + accent menthe, nouveau logo « m orbital ».
 
 ```
-site/
-├── index.html      Landing (mockup, features, comparatif, FAQ)
+./
+├── index.html      Landing v2 (hero, nouveautés 2.0, galerie, fonctionnalités, offres, FAQ)
 ├── privacy.html    Politique de confidentialité (FR + EN)
 ├── support.html    Support / FAQ (FR + EN)
 ├── styles.css      Styles partagés (thème clair + sombre)
 ├── script.js       Bascule thème + langue (persistées)
-├── img/            Screenshots (screenshot_fr.PNG, screenshot_en.PNG)
+├── img/            logo.svg, apple-touch-icon.png, icon-512.png, og-{fr,en}.jpg (partage 1200×630)
+│   └── screens/{fr,en}/  Captures de l'app (JPEG 600 px) — régénérées depuis store-screenshots/raw de l'app
 ├── robots.txt      SEO
 └── sitemap.xml     SEO
 ```

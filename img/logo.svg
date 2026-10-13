@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="MySubis">
+  <!-- Icône MySubis : « m orbital » sur tuile menthe. Source PNG : scripts/brand/generate-brand-assets.swift -->
+  <rect width="100" height="100" rx="22.37" fill="#2EE6A8"/>
+  <path d="M26 68 V44 A12 12 0 0 1 50 44 V68 M50 44 A12 12 0 0 1 74 44 V68" fill="none" stroke="#09090B" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="70.5" cy="35.5" r="10.5" fill="#2EE6A8"/>
+  <circle cx="70.5" cy="35.5" r="5.5" fill="#FFFFFF"/>
+</svg>
